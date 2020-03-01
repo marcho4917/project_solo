@@ -1,4 +1,7 @@
-@import "variables";
-@import "mixins";
-@import "normalize";
-@import "layout";
+@import 'variables';
+@import 'mixins';
+@import 'normalize';
+@import 'layout';
+
+/* Sections */
+@import 'sections/sidebar';
