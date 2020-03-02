@@ -2,34 +2,101 @@
   font-size: 20px;
   text-decoration: none;
   color: grey;
+  margin-left: 10px;
+}
+
+.sidebar ul a i {
+    margin-right: 16px;
 }
 
 .sidebar__icon a:hover {
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-  }
-  
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
 
+.sidebar-top {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sidebar-top .hamburger a{
+    color: white;
+    font-size: 20px;
+}
+
+.sidebar-top .hamburger a:hover {
+    color: orange;
+}
 
 .sidebar {
-    height: 100%;
-    width: 200px;
-    position: fixed;
-    top: 0;
-    background-color: $paragraph-color;
-    padding-top: 20px;
-    color: white;
+  height: 100%;
+  width: 200px;
+  top: 0;
+  position: fixed;
+  background-color: $paragraph-color;
+  padding-top: 20px;
+  color: white;
 
-    h2 {
-        margin: auto 10px;
-        font-size: 25px;
-        font-family: "Satisfy";
-      }
-
-    ul li {
-        padding: 15px;
-    }
+  h2 {
+    margin: auto 10px;
+    font-size: 25px;
+    font-family: "Satisfy";
   }
 
+  ul li {
+    //margin-top: 10px;
+    padding: 15px;
+  }
+}
 
+.sidebar li:hover {
+  background-color: #231f1f;
+  border-left: 4px solid orange;
+  cursor: pointer;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  position: sticky;
+  justify-content: flex-end;
+  align-items: center;
+  height: 50px;
+  width: auto;
+  //margin: auto 0;
+}
+
+.header.nav-icon {
+  display: inline-block;
+}
+
+.wallet {
+  display: flex;
+}
+
+.sidebar__manager {
+    border-top: 1px solid grey;
+    text-align: left;
+    margin-top: 40px;
+    .manager__name{
+        color: grey;
+        font-size: 16px;
+        font-family: $paragraph-font;
+        margin: 30px 20px 0 20px;
+    }
+    
+}
+.manager__info {
+    display: flex;
+
+    img {
+        display: inline-block;
+        margin: 25px 15px;
+    }
+
+    p{
+        display: block;
+        margin-top: 37px;
+    }
+}
