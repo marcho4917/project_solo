@@ -1,8 +1,35 @@
-.sidebar__link a {
-    font-size: 50px;
-    text-decoration: none;
+.sidebar__icon a {
+  font-size: 20px;
+  text-decoration: none;
+  color: grey;
 }
 
-.header {
-    font-size: 50px;
-}
+.sidebar__icon a:hover {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+
+
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    background-color: $paragraph-color;
+    padding-top: 20px;
+    color: white;
+
+    h2 {
+        margin: auto 10px;
+        font-size: 25px;
+        font-family: "Satisfy";
+      }
+
+    ul li {
+        padding: 15px;
+    }
+  }
+
+
