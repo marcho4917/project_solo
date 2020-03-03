@@ -1,53 +1,26 @@
 .sidebar__icon a {
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: none;
   color: grey;
   margin-left: 10px;
 }
 
 .sidebar ul a i {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
-.sidebar__icon a:hover {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-}
-
-.sidebar-top {
+.hamburger {
   display: flex;
   justify-content: space-around;
 }
 
-.sidebar-top .hamburger a{
-    color: white;
-    font-size: 20px;
-}
-
-.sidebar-top .hamburger a:hover {
-    color: orange;
-}
-
-.sidebar {
-  height: 100%;
-  width: 200px;
-  top: 0;
-  position: fixed;
-  background-color: $paragraph-color;
-  padding-top: 20px;
+.hamburger a {
   color: white;
+  font-size: 27px;
+}
 
-  h2 {
-    margin: auto 10px;
-    font-size: 25px;
-    font-family: "Satisfy";
-  }
-
-  ul li {
-    //margin-top: 10px;
-    padding: 15px;
-  }
+.hamburger a:hover {
+  color: orange;
 }
 
 .sidebar li:hover {
@@ -56,47 +29,50 @@
   cursor: pointer;
 }
 
-.header {
-  background-color: white;
-  display: flex;
-  position: sticky;
-  justify-content: flex-end;
-  align-items: center;
-  height: 50px;
-  width: auto;
-  //margin: auto 0;
-}
-
-.header.nav-icon {
-  display: inline-block;
-}
-
-.wallet {
-  display: flex;
-}
-
 .sidebar__manager {
-    border-top: 1px solid grey;
-    text-align: left;
-    margin-top: 40px;
-    .manager__name{
-        color: grey;
-        font-size: 16px;
-        font-family: $paragraph-font;
-        margin: 30px 20px 0 20px;
-    }
-    
+  border-top: 1px solid grey;
+  text-align: left;
+  margin-top: 40px;
+  .manager__name {
+    color: grey;
+    font-size: 16px;
+    font-family: $paragraph-font;
+    margin: 30px 20px 0 20px;
+  }
+}
+
+.sidebar__manager:hover {
+    background-color: #231f1f;
+    cursor: pointer;
 }
 .manager__info {
-    display: flex;
+  display: flex;
 
-    img {
-        display: inline-block;
-        margin: 25px 15px;
-    }
+  img {
+    display: inline-block;
+    margin: 25px 15px;
+  }
 
-    p{
-        display: block;
-        margin-top: 37px;
-    }
+  p {
+    display: block;
+    margin-top: 37px;
+  }
+}
+
+.btn-add {
+        background-color:$button-color;
+        border-radius: 4px;
+        display: flex;
+        cursor:pointer;
+        color: white;
+        font-family:Verdana;
+        font-size:17px;
+        padding:15px 18px;
+        text-decoration:none;
+        border: none;
+        margin: 20px auto;
+}
+
+.btn-add:hover {
+    background-color: #231f1f;
 }
