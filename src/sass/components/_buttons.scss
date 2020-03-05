@@ -1,0 +1,32 @@
+.btn-add {
+  background-color: $button-color;
+  border-radius: $button-radius;
+  display: flex;
+  cursor: pointer;
+  color: white;
+  font-family: $button-font;
+  font-size: $button-font-size;
+  padding: 15px 18px;
+  text-decoration: none;
+  border: none;
+  margin: 20px auto;
+}
+
+.btn-add:hover {
+  background-color: $button-hover-color;
+}
+
+.btn-load {
+  background-color: $button-color;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  font-size: $button-font-size;
+  padding: 15px 18px;
+  text-decoration: none;
+  border: none;
+  margin-left: 20px;
+}
+.btn-load:hover {
+  background-color: $button-hover-color;
+}

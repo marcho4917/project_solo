@@ -1,13 +1,19 @@
-@import 'variables';
-@import 'mixins';
-@import 'normalize';
-@import 'layout';
+/* General */
+@import "variables";
+@import "mixins";
+@import "normalize";
+@import "layout";
 
 /* Sections */
-@import 'sections/sidebar';
-@import 'sections/topbar';
+@import "sections/sidebar";
+@import "sections/topbar";
+@import "src/vendor/Glyphter";
+@import "sections/body";
+@import "sections/mainbodycontent";
 
-@import 'src/vendor/Glyphter';
-@import 'sections/body';
 
-@import 'components/links_table';
+/* Components */
+@import "components/buttons";
+@import "components/table";
+@import "components/icons";
+@import "components/manager";
