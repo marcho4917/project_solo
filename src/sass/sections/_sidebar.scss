@@ -90,3 +90,10 @@
   font-family: $paragraph-font;
   font-size: 15px;
 }
+
+@media (max-width: 767px) {
+  .wrapper .sidebar {
+    display: none;
+  }
+
+}
