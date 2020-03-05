@@ -23,4 +23,52 @@
 
 .app-title {
   border-bottom: solid 0.3px $border-color;
+  padding: 4px;
+  margin: 6px;
+}
+
+
+.period-select {
+  border-bottom: 0.2px solid $border-color;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+
+  input {
+    height: 44px;
+    padding: 10px;
+    margin-top: 4px;
+  }
+}
+
+.graph-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+  .graph-chart {
+    margin: 20px auto;
+  }
+
+  .graph-title h2 {
+    font-family: $paragraph-font;
+    font-size: 15px;
+    color: $main-color;
+    margin: 50px auto;
+    float: left;
+  }
+}
+
+.graph-legend .box {
+  float: left;
+  background-color: #f3f5f9;
+  padding: 8px 20px;
+  margin: 10px;
+}
+
+.graph-legend {
+  color: $main-color;
+  font-family: $paragraph-font;
+  font-size: 15px;
 }
