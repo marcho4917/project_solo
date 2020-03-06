@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .wrapper {
     width: 100%;
     margin: 0;
@@ -24,6 +24,8 @@
     margin-top: 50px;
     transition: 0.5s;
     height: 100%;
+    //left: -100%;
+    transform: translateX(100%);
 
     .sidebar__manager {
       width: 100%;
@@ -41,16 +43,21 @@
     .mobile_sidebar-icons {
       display: flex;
       flex-direction: column;
-      
+
       .nav-icon {
         border: none;
       }
+
       a {
         color: $main-color;
         font-size: 15px;
         font-family: $paragraph-font;
       }
     }
+  }
+
+  .show {
+    transform: translateX(0%);
   }
 
   .wrapper .main_content .header {
