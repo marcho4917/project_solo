@@ -5,6 +5,7 @@
     </meta>
     <title>Project-solo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     </link>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy&display=swap">
@@ -17,10 +18,10 @@
 <div class="wrapper">
     <div class="sidebar">
         <div class="hamburger">
-            <h2>Just do it</h2>
+            <h3>Just do it</h3>
             <a href="#"><i class="fas fa-bars"></i></a>
         </div>
-        <ul>
+        <ul class="sidebar__links">
             <li class="sidebar__icon"><a href="#General"><i class="icon-general"></i> General</a></li>
             <li class="sidebar__icon"><a href="#Details"><i class="icon-details"></i> Details</a></li>
             <li class="sidebar__icon"><a href="#Links"><i class="icon-links"></i> Links</a></li>
@@ -57,7 +58,7 @@
     <div class="main_content">
         <div class="header">
             <div class="mobile-topbar">
-                <h2>Just do it</h2>
+                <h3>Just do it</h3>
                 <a href="#"><i class="burg fas fa-bars"></i></a>
             </div>
             <div class="nav-icon wallet">
@@ -74,149 +75,218 @@
             </div>
         </div>
         <div class="main-app">
-            <section>
-                <div class="app-title">
-                    <h1>GENERAL STATISTIC</h1>
-                </div>
-                <div class="period-select">
-                    <input type="text" name="date">
-                    <button class="btn btn-load"><i class="icon-refresh"></i></button>
-                </div>
-                <div class="table-values">
-                    <div class="col-1">
-                        <div class="value">
-                            <p class="value-title">Visit signups</p>
-                            <p>124</p>
+            <div id="pages">
+                <section id="General">
+                    <div class="app-title">
+                        <h1>GENERAL STATISTIC</h1>
+                    </div>
+                    <div class="period-select">
+                        <input type="text" id="rangeDate" placeholder="Select range" data-input>
+                        <button class="btn btn-load"><i class="icon-refresh"></i></button>
+                    </div>
+                    <div class="table-values">
+                        <div class="col-1">
+                            <div class="value">
+                                <p class="value-title">Visit signups</p>
+                                <p>124</p>
+                            </div>
+                            <div class="value">
+                                <p class="value-title">Visit signups</p>
+                                <p>124</p>
+                            </div>
                         </div>
-                        <div class="value">
-                            <p class="value-title">Visit signups</p>
-                            <p>124</p>
+                        <div class="col-2">
+                            <div class="value">
+                                <p class="value-title">Visit signups</p>
+                                <p>124</p>
+                            </div>
+                            <div class="value">
+                                <p class="value-title">Visit signups</p>
+                                <p>124</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-2">
-                        <div class="value">
-                            <p class="value-title">Visit signups</p>
-                            <p>124</p>
+                    <div class="graph-wrapper">
+                        <div class="graph-title">
+                            <h2>Earnings chart</h2>
                         </div>
-                        <div class="value">
-                            <p class="value-title">Visit signups</p>
-                            <p>124</p>
+                        <div class="graph-legend">
+                            <div class="box box-1">
+                                <p>Signups</p>
+                            </div>
+                            <div class="box box-1">
+                                <p>FTD</p>
+                            </div>
+                            <div class="box box-1">
+                                <p>Earned</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="graph-wrapper">
-                    <div class="graph-title">
-                        <h2>Earnings chart</h2>
-                    </div>
-                    <div class="graph-legend">
-                        <div class="box box-1">
-                            <p>Signups</p>
-                        </div>
-                        <div class="box box-1">
-                            <p>FTD</p>
-                        </div>
-                        <div class="box box-1">
-                            <p>Earned</p>
+                        <div class="graph-chart">
+                            <img src="images/wykres.png">
                         </div>
                     </div>
-                    <div class="graph-chart">
-                        <img src="images/wykres.png">
+                </section>
+                <section id="Links">
+                    <div class="app-title">
+                        <h1>LINKS</h1>
                     </div>
-                </div>
-            </section>
-            <section>
-                <div class="app-title">
-                    <h1>LINKS</h1>
-                </div>
-                <button class="btn btn-add">+ add new</button>
-                    <table class="links-table">
-                        <tr>
-                            <td>Home page</td>
-                            <td><a href="#">http://www.homepage.com</a></td>
-                            <td class="table-icons">
-                                <a href="#"><i class="icon-links"></i></a>
-                                <a href="#"><i class="icon-trash"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Currently offer</td>
-                            <td><a href="#">http://www.homepage.com</a></td>
-                            <td class="table-icons">
-                                <a href="#"><i class="icon-links"></i></a>
-                                <a href="#"><i class="icon-trash"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Blurpix</td>
-                            <td><a href="#">http://www.homepage.com</a></td>
-                            <td class="table-icons">
-                                <a href="#"><i class="icon-links"></i></a>
-                                <a href="#"><i class="icon-trash"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Your site</td>
-                            <td><a href="#">http://www.homepage.com</a></td>
-                            <td class="table-icons">
-                                <a href="#"><i class="icon-links"></i></a>
-                                <a href="#"><i class="icon-trash"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Google</td>
-                            <td><a href="#">http://www.homepage.com</a></td>
-                            <td class="table-icons">
-                                <a href="#"><i class="icon-links"></i></a>
-                                <a href="#"><i class="icon-trash"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Facebook</td>
-                            <td><a href="#">http://www.homepage.com</a></td>
-                            <td class="table-icons">
-                                <a href="#"><i class="icon-links"></i></a>
-                                <a href="#"><i class="icon-trash"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Dashboard</td>
-                            <td><a href="#">http://www.homepage.com</a></td>
-                            <td class="table-icons">
-                                <a href="#"><i class="icon-links"></i></a>
-                                <a href="#"><i class="icon-trash"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Blurax</td>
-                            <td><a href="#">http://www.homepage.com</a></td>
-                            <td class="table-icons">
-                                <a href="#"><i class="icon-links"></i></a>
-                                <a href="#"><i class="icon-trash"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Piece of Wine</td>
-                            <td><a href="#">http://www.homepage.com</a></td>
-                            <td class="table-icons">
-                                <a href="#"><i class="icon-links"></i></a>
-                                <a href="#"><i class="icon-trash"></i></a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Twitter</td>
-                            <td><a href="#">http://www.homepage.com</a></td>
-                            <td class="table-icons">
-                                <a href="#"><i class="icon-links"></i></a>
-                                <a href="#"><i class="icon-trash"></i></a>
-                            </td>
-                        </tr>
-                      
-                    </table>
-                <button class="btn btn-add">+ add new</button>
-            </section>
+                    <button class="btn btn-add">+ add new</button>
+                        <table class="links-table">
+                            <tr>
+                                <td>Home page</td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Currently offer</td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Blurpix</td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Your site</td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Google</td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Facebook</td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Dashboard</td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Blurax</td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Piece of Wine</td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Twitter</td>
+                                <td><a href="#">http://www.homepage.com</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                        </table>
+                    <button class="btn btn-add">+ add new</button>
+                </section>
+                <section id="Banners">
+                    <div class="app-title">
+                        <h1>BANNERS</h1>
+                    </div>
+                    <button class="btn btn-add">+ add new</button>
+                        <table class="links-table">
+                            <tr>
+                                <td>Banner main</td>
+                                <td><a href="#">http://www.website.com/bannermain.gif</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sign up banner</td>
+                                <td><a href="#">http://www.website.com/bannermain.gif</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Banner left side</td>
+                                <td><a href="#">http://www.website.com/bannermain.gif</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Vertical banner</td>
+                                <td><a href="#">http://www.website.com/bannermain.gif</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Front banner</td>
+                                <td><a href="#">http://www.website.com/bannermain.gif</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Horizontal banner</td>
+                                <td><a href="#">http://www.website.com/bannermain.gif</a></td>
+                                <td class="table-icons">
+                                    <a href="#"><i class="icon-links"></i></a>
+                                    <a href="#"><i class="icon-trash"></i></a>
+                                </td>
+                            </tr>
+                        </table>
+                    <button class="btn btn-add">+ add new</button>
+                </section>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal--quit">
+        <div class="modal__logout">
+            <h2>LOGIN</h2>
+            <div class="logout-content">
+                <input type="text" placeholder="login name">
+                <input type="text" placeholder="password">
+                <button class="btn btn-enter">Enter</button>
+            </div>
         </div>
     </div>
 </div>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -24,16 +24,21 @@
     margin-top: 50px;
     transition: 0.5s;
     height: 100%;
-    //left: -100%;
     transform: translateX(100%);
 
     .sidebar__manager {
       width: 100%;
       border-top: none;
+      margin: 0;
+    }
+
+    .manager__name {
+      margin: 0 15px;
+      color: white;
     }
 
     ul li {
-      padding: 5px;
+      padding: 12px;
     }
 
     .hamburger {
@@ -56,7 +61,7 @@
     }
   }
 
-  .show {
+  .wrapper .sidebar.show {
     transform: translateX(0%);
   }
 

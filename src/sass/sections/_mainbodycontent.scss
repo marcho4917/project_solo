@@ -21,6 +21,16 @@
   }
 }
 
+#pages {
+  > * {
+    display: none;
+  }
+
+  > .active {
+    display: block;
+  }
+}
+
 .app-title {
   border-bottom: solid 0.3px $border-color;
   padding: 4px;
@@ -33,11 +43,13 @@
   padding: 30px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
 
   input {
     height: 44px;
     padding: 10px;
     margin-top: 4px;
+    margin-left: auto;
   }
 }
 
@@ -71,4 +83,12 @@
   color: $main-color;
   font-family: $paragraph-font;
   font-size: 15px;
+}
+
+h1 {
+  font-size: 16px;
+  font-family: $paragraph-font;
+  color: $second-color;
+  padding-top: 5px;
+  margin-left: 6px;
 }
