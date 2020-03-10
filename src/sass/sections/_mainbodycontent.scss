@@ -3,6 +3,7 @@
   margin-left: 10px;
   margin-right: 10px;
   padding: 8px;
+  //margin-bottom: 0;
 }
 
 .wrapper .main-app section {
@@ -83,12 +84,4 @@
   color: $main-color;
   font-family: $paragraph-font;
   font-size: 15px;
-}
-
-h1 {
-  font-size: 16px;
-  font-family: $paragraph-font;
-  color: $second-color;
-  padding-top: 5px;
-  margin-left: 6px;
 }

@@ -1,0 +1,37 @@
+h1 {
+  font-size: 16px;
+  font-family: $paragraph-font;
+  color: $second-color;
+  padding-top: 5px;
+}
+
+h2 {
+  font-family: $paragraph-font;
+  font-size: 15px;
+  color: $main-color;
+}
+
+h3 {
+    color: white;
+    font-size: 30px;
+    font-family: $logo-font;
+}
+
+button {
+  background-color: $button-color;
+  border-radius: $button-radius;
+  display: flex;
+  cursor: pointer;
+  color: white;
+  font-family: $button-font;
+  font-size: $button-font-size;
+  padding: 15px 18px;
+  text-decoration: none;
+  border: none;
+  margin: 20px auto;
+}
+
+tr td {
+    padding: 18px;
+    justify-content: space-between;
+}
