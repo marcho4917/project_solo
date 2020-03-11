@@ -46,15 +46,16 @@
 
 i.icon-arrow-right {
   font-size: 25px;
-  transform: translateX(-480px);
   padding: 10px;
   cursor: pointer;
 }
 
 i.icon-arrow-right.show-arrow {
-  transform: translateX(-439px);
+  display: block;
   color: orange;
   transition: 0.5s;
+  transform: translateX(50px);
+
 }
 
 i.icon-arrow-right.show-arrow:hover {
