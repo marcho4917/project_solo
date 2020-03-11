@@ -54,8 +54,8 @@ i.icon-arrow-right.show-arrow {
   display: block;
   color: orange;
   transition: 0.5s;
-  transform: translateX(50px);
-
+  position: absolute;
+  z-index: 2;
 }
 
 i.icon-arrow-right.show-arrow:hover {
