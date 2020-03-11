@@ -1,6 +1,7 @@
 .wrapper .main-content {
   width: 100%;
   margin-left: 200px;
+  transition: 0.5s;
 }
 
 .wrapper .main-content .header {
@@ -45,7 +46,7 @@
 }
 
 i.icon-arrow-right {
-  font-size: 25px;
+  font-size: 23px;
   padding: 10px;
   cursor: pointer;
 }
