@@ -16,24 +16,24 @@
 
 <body>
 <div class="wrapper">
-    <div class="sidebar">
+    <div class="sidebar sidebar-screen">
         <div class="hamburger">
             <h3>Just do it</h3>
             <a href="#"><i class="fas fa-bars"></i></a>
         </div>
-        <ul class="sidebar__links">
-            <li class="sidebar__icon"><a href="#General"><i class="icon-general"></i> General</a></li>
-            <li class="sidebar__icon"><a href="#Details"><i class="icon-details"></i> Details</a></li>
-            <li class="sidebar__icon"><a href="#Links"><i class="icon-links"></i> Links</a></li>
-            <li class="sidebar__icon"><a href="#Banners"><i class="icon-banners"></i> Banners</a></li>
-            <li class="sidebar__icon"><a href="#Personal-data"><i class="icon-personaldata"></i> Personal Data</a></li>
-            <li class="sidebar__icon"><a href="#Payout"><i class="icon-payout"></i> Payout</a></li>
-            <li class="sidebar__icon"><a href="#Postback"> <i class="icon-postback"></i> Postback</a></li>
+        <ul class="sidebar-links">
+            <li class="sidebar-icon"><a href="#General"><i class="icon-general"></i> General</a></li>
+            <li class="sidebar-icon"><a href="#Details"><i class="icon-details"></i> Details</a></li>
+            <li class="sidebar-icon"><a href="#Links"><i class="icon-links"></i> Links</a></li>
+            <li class="sidebar-icon"><a href="#Banners"><i class="icon-banners"></i> Banners</a></li>
+            <li class="sidebar-icon"><a href="#Personal-data"><i class="icon-personaldata"></i> Personal Data</a></li>
+            <li class="sidebar-icon"><a href="#Payout"><i class="icon-payout"></i> Payout</a></li>
+            <li class="sidebar-icon"><a href="#Postback"> <i class="icon-postback"></i> Postback</a></li>
         </ul>
-        <div class="sidebar__manager">
-            <p class="manager__name">Your manager</p>
+        <div class="sidebar-manager">
+            <p class="manager-name">Your manager</p>
             <a href="#chat">
-                <div class="manager__info">
+                <div class="manager-info">
                     <img src="https://i.imgur.com/qNdEkRP.png" alt="manager face" />
                     <p>Mikhael E.</p>
                 </div>
@@ -55,8 +55,9 @@
         </div>
     </div>
    
-    <div class="main_content">
+    <div class="main-content">
         <div class="header">
+            <i class="icon-arrow-right"></i>
             <div class="mobile-topbar">
                 <h3>Just do it</h3>
                 <a href="#"><i class="burg fas fa-bars"></i></a>
@@ -84,47 +85,52 @@
                         <input type="text" id="rangeDate" placeholder="Select range" data-input>
                         <button class="btn btn-load"><i class="icon-refresh"></i></button>
                     </div>
-                    <div class="table-values">
-                        <div class="col-1">
-                            <div class="value">
-                                <p class="value-title">Visit signups</p>
-                                <p>124</p>
-                            </div>
-                            <div class="value">
-                                <p class="value-title">Visit signups</p>
-                                <p>124</p>
-                            </div>
-                        </div>
-                        <div class="col-2">
-                            <div class="value">
-                                <p class="value-title">Visit signups</p>
-                                <p>124</p>
-                            </div>
-                            <div class="value">
-                                <p class="value-title">Visit signups</p>
-                                <p>124</p>
+                    <div class="table-values container">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-1 col-md-6">
+                                    <div class="value">
+                                        <p class="value-title">Visit signups</p>
+                                        <p>124</p>
+                                    </div>
+                                    <div class="value">
+                                        <p class="value-title">Visit signups</p>
+                                        <p>124</p>
+                                    </div>
+                                </div>
+                                <div class="col-2 col-md-6">
+                                    <div class="value">
+                                        <p class="value-title">Visit signups</p>
+                                        <p>124</p>
+                                    </div>
+                                    <div class="value">
+                                        <p class="value-title">Visit signups</p>
+                                        <p>124</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="graph-wrapper">
-                        <div class="graph-title">
-                            <h2>Earnings chart</h2>
-                        </div>
-                        <div class="graph-legend">
-                            <div class="box box-1">
-                                <p>Signups</p>
+                        <div class="graph-wrapper">
+                            <div class="graph-title">
+                                <h2>Earnings chart</h2>
                             </div>
-                            <div class="box box-1">
-                                <p>FTD</p>
+                            <div class="graph-legend">
+                                <div class="box box-1">
+                                    <p>Signups</p>
+                                </div>
+                                <div class="box box-1">
+                                    <p>FTD</p>
+                                </div>
+                                <div class="box box-1">
+                                    <p>Earned</p>
+                                </div>
                             </div>
-                            <div class="box box-1">
-                                <p>Earned</p>
+                            <div class="graph-chart">
+                                <img src="images/wykres.png">
                             </div>
                         </div>
-                        <div class="graph-chart">
-                            <img src="images/wykres.png">
-                        </div>
-                    </div>
+            
                 </section>
                 <section id="Links">
                     <div class="app-title">
@@ -215,12 +221,12 @@
                         </table>
                     <button class="btn btn-add">+ add new</button>
                 </section>
-                <section id="Banners" class="container">
+                <section id="Banners">
                     <div class="app-title">
                         <h1>BANNERS</h1>
                     </div>
                     <button class="btn btn-add">+ add new</button>
-                        <table class="links-table container-fluid col-lg-7">
+                        <table class="links-table">
                             <tr>
                                 <td>Banner main</td>
                                 <td><a href="#">http://www.website.com/bannermain.gif</a></td>
@@ -276,8 +282,11 @@
         </div>
     </div>
     <div class="modal modal--quit">
-        <div class="modal__logout">
+        <div class="modal-logout">
+        <div class="modal-close">
             <h2>LOGIN</h2>
+            <i class="icon-close"></i>
+        </div>
             <div class="logout-content">
                 <input type="text" placeholder="login name">
                 <input type="text" placeholder="password">

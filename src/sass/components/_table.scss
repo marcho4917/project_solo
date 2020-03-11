@@ -34,9 +34,6 @@
 }
 
 .table-values {
-  display: flex;
-  margin: 20px auto;
-  width: 50%;
   justify-content: space-between;
 
   p {
@@ -46,15 +43,12 @@
   .value {
     border-bottom: 0.3px solid $border-color;
     padding: 8px;
-  }
-
-  .col-2 {
-    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .value-title {
-  margin-right: 120px;
   color: $second-color;
   font-family: $paragraph-font;
 }

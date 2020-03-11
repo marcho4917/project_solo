@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media (max-width: 900px) {
   .wrapper {
     width: 100%;
     margin: 0;
@@ -26,13 +26,13 @@
     height: 100%;
     transform: translateX(100%);
 
-    .sidebar__manager {
+    .sidebar-manager {
       width: 100%;
       border-top: none;
       margin: 0;
     }
 
-    .manager__name {
+    .manager-name {
       margin: 0 15px;
       color: white;
     }
@@ -65,7 +65,7 @@
     transform: translateX(0%);
   }
 
-  .wrapper .main_content .header {
+  .wrapper .main-content .header {
     width: 100%;
     background-color: $button-color;
     padding: 10px;
@@ -90,7 +90,7 @@
     }
   }
 
-  .wrapper .main_content {
+  .wrapper .main-content {
     width: 100%;
     margin: 0;
   }

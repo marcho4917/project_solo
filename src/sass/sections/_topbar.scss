@@ -1,9 +1,9 @@
-.wrapper .main_content {
+.wrapper .main-content {
   width: 100%;
   margin-left: 200px;
 }
 
-.wrapper .main_content .header {
+.wrapper .main-content .header {
   background: white;
   color: $main-color;
   border-bottom: 1px solid $border-color;
@@ -42,4 +42,21 @@
 
 .header .mobile-icons {
   display: none;
+}
+
+i.icon-arrow-right {
+  font-size: 25px;
+  transform: translateX(-480px);
+  padding: 10px;
+  cursor: pointer;
+}
+
+i.icon-arrow-right.show-arrow {
+  transform: translateX(-439px);
+  color: orange;
+  transition: 0.5s;
+}
+
+i.icon-arrow-right.show-arrow:hover {
+  background-color: black;
 }

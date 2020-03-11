@@ -3,7 +3,7 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-
+@import "grid";
 
 /* Sections */
 @import "sections/sidebar";
@@ -24,4 +24,3 @@
 /* Media queries */
 @import "media";
 
-@import "grid";

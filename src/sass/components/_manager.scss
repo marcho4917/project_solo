@@ -1,9 +1,9 @@
-.sidebar__manager {
+.sidebar-manager {
   border-top: 1px solid $main-color;
   text-align: left;
   margin-top: 40px;
 
-  .manager__name {
+  .manager-name {
     color: $main-color;
     font-size: 16px;
     font-family: $paragraph-font;
@@ -11,12 +11,12 @@
   }
 }
 
-.sidebar__manager:hover {
+.sidebar-manager:hover {
   background-color: $button-hover-color;
   cursor: pointer;
 }
 
-.manager__info {
+.manager-info {
   display: flex;
 
   img {

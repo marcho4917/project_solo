@@ -1,5 +1,5 @@
 .modal {
-  height: 100vw;
+  height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7);
   position: absolute;
@@ -7,6 +7,8 @@
   display: flex;
   justify-content: center;
   display: none;
+  margin: auto;
+  min-height: 100vh;
 }
 
 h2 {
@@ -16,11 +18,12 @@ h2 {
   color: $main-color;
 }
 
-.modal__logout {
+.modal-logout {
   width: 900px;
   height: 200px;
   background-color: white;
   margin-top: 150px;
+  display: inline-block;
 
   .logout-content {
     justify-content: center;
@@ -36,5 +39,17 @@ h2 {
       width: 30%;
       padding: 15px;
     }
+  }
+}
+
+.modal-close {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+  i {
+    cursor: pointer;
+    margin-right: 10px;
   }
 }

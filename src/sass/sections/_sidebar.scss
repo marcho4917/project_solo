@@ -4,6 +4,7 @@
   background: $paragraph-color;
   position: fixed;
   padding-top: 10px;
+  transition: 0.5s;
 
   .mobile_sidebar-icons {
     display: none;
@@ -48,4 +49,9 @@
   background-color: $button-hover-color;
   border-left: 4px solid $button-color;
   cursor: pointer;
+}
+
+.sidebar-screen.hide {
+  transform: translateX(-100%);
+  transition: 0.5s;
 }

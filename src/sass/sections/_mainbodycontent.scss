@@ -85,3 +85,13 @@
   font-family: $paragraph-font;
   font-size: 15px;
 }
+
+.wrapper .main-content.viewer {
+  margin-left: 0;
+  transition: 0.5s;
+
+  .header {
+    width: 100%;
+    transition:0.5s;
+  }
+}
