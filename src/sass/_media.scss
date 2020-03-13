@@ -134,6 +134,7 @@ i.icon-arrow-right.show-arrow {
 
 @media(max-width: 767px) {
   @include grid('sm');
+  
   i.icon-arrow-right.show-arrow {
     visibility: hidden;
   }
@@ -141,6 +142,7 @@ i.icon-arrow-right.show-arrow {
 
 @media(min-width: 768px) {
   @include grid('md');
+
   i.icon-arrow-right.show-arrow {
     visibility: visible;
   }
