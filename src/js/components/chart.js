@@ -1,7 +1,9 @@
+/* global Chart */
+
 export function initChart() {
   var ctx = document.getElementById('myChart').getContext('2d');
 
-  var chart = new Chart(ctx, {
+  new Chart(ctx, {
     // 1
     type: 'bar',
     data: {
@@ -32,5 +34,5 @@ export function initChart() {
         hidden: true,
       }]
     },
-});
+  });
 }
