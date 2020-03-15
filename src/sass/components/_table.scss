@@ -44,6 +44,10 @@
 .table-values {
   justify-content: space-between;
 
+  .value-column {
+    padding: 0 5px;
+  }
+
   p {
     display: inline-block;
   }
