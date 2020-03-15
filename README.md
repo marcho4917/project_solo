@@ -1,1 +1,1 @@
-https://marcho4917.github.io/project_solo/index.html
+https://marcho4917.github.io/project_solo/
