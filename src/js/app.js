@@ -1,4 +1,5 @@
 import {classNames } from './settings.js';
+import {initChart} from './components/chart.js';
 
 const app = {
   initPage: function() { 
@@ -38,6 +39,7 @@ const app = {
     const thisApp = this;
     thisApp.initPage();
     thisApp.toggleMenu();
+    initChart();
   },
 };
 app.init();
