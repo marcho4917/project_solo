@@ -1,0 +1,5 @@
+flatpickr('#rangeDate', {
+  mode: 'range'
+});
+    
+  
