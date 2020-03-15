@@ -29,26 +29,31 @@
 
 .wrapper .sidebar ul li:hover a {
   color: white;
+  transition: 0.5s;
 }
 
 .hamburger {
   display: flex;
   justify-content: space-around;
+  transition: 0.5s;
 
   a {
     color: white;
     font-size: 27px;
+    transition: 0.5s;
   }
 }
 
 .hamburger a:hover {
   color: $button-color;
+  transition: 0.5s;
 }
 
 .sidebar li:hover {
   background-color: $button-hover-color;
   border-left: 4px solid $button-color;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .sidebar-screen.hide {

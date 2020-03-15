@@ -45,10 +45,11 @@
   align-items: center;
 
   input {
-    height: 44px;
+    height: 52px;
     padding: 10px;
-    margin-top: 4px;
     margin-left: auto;
+    border-radius: $button-radius;
+    background-color: $border-color;
   }
 }
 

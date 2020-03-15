@@ -14,6 +14,10 @@
   justify-content: flex-end;
   height: 50px;
 
+  a {
+    color: $second-color;
+  }
+
   .mobile-topbar {
     display: none;
 
@@ -39,6 +43,7 @@
 .nav-icon:hover {
   cursor: pointer;
   background-color: $button-color;
+  transition: 0.5s;
 }
 
 .header .mobile-icons {

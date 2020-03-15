@@ -5,6 +5,10 @@
   margin: 0 auto;
   height: 80%;
   width: 60%;
+
+  a {
+    color: $links-color;
+  }
 }
 
 .links-table tr td {
@@ -19,18 +23,22 @@
 .links-table .table-icons i {
   margin: 0 5px;
   opacity: 0;
+  color: black;
 }
 
 .links-table tr:hover {
   background-color: $back-color;
+  transition: 0.5s;
 
   .table-icons i {
     opacity: 1;
+    transition: 0.5s;
   }
 }
 
 .links-table .table-icons i:hover {
   color: orange;
+  transition: 0.5s;
 }
 
 .table-values {
